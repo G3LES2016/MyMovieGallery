@@ -1,14 +1,5 @@
-# MyVideoGallery
+# MyMovieGallery
 ##GRUPO 3 - LES 2016-1
-projeto minha galeria de videos.
+projeto minha galeria de filmes,galeria de filmes, adicionados via youtube url's.
 Proposta de projeto para matéria de laboratório e engenharia de software.
 professor Antonio Sergio Bernardo
- __ __ __ __ __ __ __ __ __ __ __ __ __
-|                                      |
-|                                      |
-|  Amarildo Henrique Batista Paixão    |
-|  Maycon Noronha Machado              |
-|  Rafael Gattermaier                  |
-|  Rafael Quevedo Pereira              |
-|  Rafaela Capelari                    |
-|__ __ __ __ __ __ __ __ __ __ __ __ __|
