@@ -14,7 +14,7 @@ var movieSchema = new mongoose.Schema({
   },
   category : {
     type : String,
-    rewuired : true
+    required : true
   }
 });
 
