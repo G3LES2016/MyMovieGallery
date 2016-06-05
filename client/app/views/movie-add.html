@@ -9,7 +9,33 @@
   </div>
   <div class="form-group">
     <label for="title" class="control-label">Category</label>
-    <input type="text" ng-model="movie.category" class="form-control" id="title" placeholder="Enter the video category" >
+    <!--<input type="text" ng-model="movie.category" class="form-control" id="title" placeholder="Enter the video category" >!-->
+    <select required ng-model="movie.category" placeholder="Enter the video category">
+      <option accesskey="0"value="">Indefinido</option>
+      <option accesskey="7"value="80's">80's</option>
+      <option accesskey="8"value="90's">90's</option>
+      <option accesskey="13"value="Ação">Ação</option>
+      <option accesskey="12"value="Animação">Animação</option>
+      <option accesskey="11"value="Bruxas, feitiços e afins">Bruxas, feitiços e afins</option>
+      <option accesskey="9"value="Chucky Norris">Chucky Norris</option>
+      <option accesskey="10"value="Era Medieval">Era Medieval</option>
+      <option accesskey="5"value="Filmes com Animais">Filmes com Animais</option>
+      <option accesskey="3"value="Musical">Musical</option>
+      <option accesskey="6"value="Natal">Natal</option>
+      <option accesskey="1"value="Nerd">Nerd</option>
+      <option accesskey="4"value="Para Dançar">Para Dançar</option>
+      <option accesskey="2"value="Sessão da tarde">Sessão da tarde</option>
+      <option accesskey="9"value="Super Heróis">Super Heróis</option>
+      <option accesskey="9"value="Zombies">Zombies</option>
+      <option accesskey="9"value="Monstros">Monstros</option>
+      <option accesskey="9"value="Aliens">Aliens</option>
+      <option accesskey="9"value="Dinossauros">Dinossauros</option>
+      <option accesskey="9"value="Vampiros">Vampiros</option>
+
+
+    </select>
+</div>
+
   </div>
   <input type="submit" class="btn btn-primary" ng-click="saveMovie()" value="Save">
 </form>
