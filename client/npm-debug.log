@@ -1,0 +1,260 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Rafael\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-imagemin',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.9.0
+3 info using node@v4.2.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData grunt-contrib-imagemin@^1.0.0
+8 silly fetchNamedPackageData grunt-contrib-imagemin
+9 silly mapToRegistry name grunt-contrib-imagemin
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'grunt-contrib-imagemin',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'grunt-contrib-imagemin',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-imagemin
+14 verbose request uri https://registry.npmjs.org/grunt-contrib-imagemin
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 20:34:30
+17 verbose request id aad818dfa5135aec
+18 verbose etag "57OUUET83QGF06TN4O9UZ7Q2E"
+19 http request GET https://registry.npmjs.org/grunt-contrib-imagemin
+20 http 304 https://registry.npmjs.org/grunt-contrib-imagemin
+21 verbose headers { date: 'Tue, 07 Jun 2016 23:34:33 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"57OUUET83QGF06TN4O9UZ7Q2E"',
+21 verbose headers   age: '111',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-lax1442-LAX',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1465342473.140066,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Tue, 07 Jun 2016 23:34:33 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"57OUUET83QGF06TN4O9UZ7Q2E"',
+22 silly get     age: '111',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-lax1442-LAX',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1465342473.140066,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/grunt-contrib-imagemin from cache
+24 verbose get saving grunt-contrib-imagemin to C:\Users\Rafael\AppData\Roaming\npm-cache\registry.npmjs.org\grunt-contrib-imagemin\.cache.json
+25 verbose correctMkdir C:\Users\Rafael\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule grunt-contrib-imagemin@1.0.1 checking installable status
+39 silly cache add args [ 'grunt-contrib-imagemin@^1.0.0', null ]
+40 verbose cache add spec grunt-contrib-imagemin@^1.0.0
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'grunt-contrib-imagemin@^1.0.0',
+41 silly cache add   scope: null,
+41 silly cache add   name: 'grunt-contrib-imagemin',
+41 silly cache add   rawSpec: '^1.0.0',
+41 silly cache add   spec: '>=1.0.0 <2.0.0',
+41 silly cache add   type: 'range' }
+42 silly addNamed grunt-contrib-imagemin@>=1.0.0 <2.0.0
+43 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for grunt-contrib-imagemin
+44 silly addNameRange { name: 'grunt-contrib-imagemin',
+44 silly addNameRange   range: '>=1.0.0 <2.0.0',
+44 silly addNameRange   hasData: false }
+45 silly mapToRegistry name grunt-contrib-imagemin
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'grunt-contrib-imagemin',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   name: 'grunt-contrib-imagemin',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-imagemin
+50 verbose addNameRange registry:https://registry.npmjs.org/grunt-contrib-imagemin not in flight; fetching
+51 verbose get https://registry.npmjs.org/grunt-contrib-imagemin not expired, no request
+52 silly addNameRange number 2 { name: 'grunt-contrib-imagemin',
+52 silly addNameRange   range: '>=1.0.0 <2.0.0',
+52 silly addNameRange   hasData: true }
+53 silly addNameRange versions [ 'grunt-contrib-imagemin',
+53 silly addNameRange   [ '0.1.0',
+53 silly addNameRange     '0.1.1',
+53 silly addNameRange     '0.1.2',
+53 silly addNameRange     '0.1.3',
+53 silly addNameRange     '0.1.4',
+53 silly addNameRange     '0.1.1-rc7',
+53 silly addNameRange     '0.1.1-rc8',
+53 silly addNameRange     '0.2.0',
+53 silly addNameRange     '0.2.1',
+53 silly addNameRange     '0.3.0',
+53 silly addNameRange     '0.4.0',
+53 silly addNameRange     '0.4.1',
+53 silly addNameRange     '0.5.0',
+53 silly addNameRange     '0.6.0',
+53 silly addNameRange     '0.6.1',
+53 silly addNameRange     '0.7.0',
+53 silly addNameRange     '0.7.1',
+53 silly addNameRange     '0.7.2',
+53 silly addNameRange     '0.8.0',
+53 silly addNameRange     '0.8.1',
+53 silly addNameRange     '0.9.0',
+53 silly addNameRange     '0.9.1',
+53 silly addNameRange     '0.9.2',
+53 silly addNameRange     '0.9.3',
+53 silly addNameRange     '0.9.4',
+53 silly addNameRange     '1.0.0',
+53 silly addNameRange     '1.0.1' ] ]
+54 silly addNamed grunt-contrib-imagemin@1.0.1
+55 verbose addNamed "1.0.1" is a plain semver version for grunt-contrib-imagemin
+56 silly mapToRegistry name grunt-contrib-imagemin
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry data Result {
+59 silly mapToRegistry   raw: 'grunt-contrib-imagemin',
+59 silly mapToRegistry   scope: null,
+59 silly mapToRegistry   name: 'grunt-contrib-imagemin',
+59 silly mapToRegistry   rawSpec: '',
+59 silly mapToRegistry   spec: 'latest',
+59 silly mapToRegistry   type: 'tag' }
+60 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-imagemin
+61 verbose addRemoteTarball https://registry.npmjs.org/grunt-contrib-imagemin/-/grunt-contrib-imagemin-1.0.1.tgz not in flight; adding
+62 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-imagemin/-/grunt-contrib-imagemin-1.0.1.tgz',
+62 verbose addRemoteTarball   'e47a35613376f4caa9c1f90446503cae1c944d79' ]
+63 info retry fetch attempt 1 at 20:34:33
+64 info attempt registry request try #1 at 20:34:33
+65 http fetch GET https://registry.npmjs.org/grunt-contrib-imagemin/-/grunt-contrib-imagemin-1.0.1.tgz
+66 http fetch 200 https://registry.npmjs.org/grunt-contrib-imagemin/-/grunt-contrib-imagemin-1.0.1.tgz
+67 silly fetchAndShaCheck shasum e47a35613376f4caa9c1f90446503cae1c944d79
+68 verbose addTmpTarball C:\Users\Rafael\AppData\Local\Temp\npm-112888-5b41832d\registry.npmjs.org\grunt-contrib-imagemin\-\grunt-contrib-imagemin-1.0.1.tgz not in flight; adding
+69 verbose addTmpTarball already have metadata; skipping unpack for grunt-contrib-imagemin@1.0.1
+70 verbose correctMkdir C:\Users\Rafael\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+71 silly cache afterAdd grunt-contrib-imagemin@1.0.1
+72 verbose afterAdd C:\Users\Rafael\AppData\Roaming\npm-cache\grunt-contrib-imagemin\1.0.1\package\package.json not in flight; writing
+73 verbose correctMkdir C:\Users\Rafael\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+74 verbose afterAdd C:\Users\Rafael\AppData\Roaming\npm-cache\grunt-contrib-imagemin\1.0.1\package\package.json written
+75 silly fetchNamedPackageData async
+76 silly mapToRegistry name async
+77 silly mapToRegistry using default registry
+78 silly mapToRegistry registry https://registry.npmjs.org/
+79 silly mapToRegistry data Result {
+79 silly mapToRegistry   raw: 'async',
+79 silly mapToRegistry   scope: null,
+79 silly mapToRegistry   name: 'async',
+79 silly mapToRegistry   rawSpec: '',
+79 silly mapToRegistry   spec: 'latest',
+79 silly mapToRegistry   type: 'tag' }
+80 silly mapToRegistry uri https://registry.npmjs.org/async
+81 silly fetchNamedPackageData chalk
+82 silly mapToRegistry name chalk
+83 silly mapToRegistry using default registry
+84 silly mapToRegistry registry https://registry.npmjs.org/
+85 silly mapToRegistry data Result {
+85 silly mapToRegistry   raw: 'chalk',
+85 silly mapToRegistry   scope: null,
+85 silly mapToRegistry   name: 'chalk',
+85 silly mapToRegistry   rawSpec: '',
+85 silly mapToRegistry   spec: 'latest',
+85 silly mapToRegistry   type: 'tag' }
+86 silly mapToRegistry uri https://registry.npmjs.org/chalk
+87 silly fetchNamedPackageData gulp-rename
+88 silly mapToRegistry name gulp-rename
+89 silly mapToRegistry using default registry
+90 silly mapToRegistry registry https://registry.npmjs.org/
+91 silly mapToRegistry data Result {
+91 silly mapToRegistry   raw: 'gulp-rename',
+91 silly mapToRegistry   scope: null,
+91 silly mapToRegistry   name: 'gulp-rename',
+91 silly mapToRegistry   rawSpec: '',
+91 silly mapToRegistry   spec: 'latest',
+91 silly mapToRegistry   type: 'tag' }
+92 silly mapToRegistry uri https://registry.npmjs.org/gulp-rename
+93 silly fetchNamedPackageData imagemin
+94 silly mapToRegistry name imagemin
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry https://registry.npmjs.org/
+97 silly mapToRegistry data Result {
+97 silly mapToRegistry   raw: 'imagemin',
+97 silly mapToRegistry   scope: null,
+97 silly mapToRegistry   name: 'imagemin',
+97 silly mapToRegistry   rawSpec: '',
+97 silly mapToRegistry   spec: 'latest',
+97 silly mapToRegistry   type: 'tag' }
+98 silly mapToRegistry uri https://registry.npmjs.org/imagemin
+99 silly fetchNamedPackageData pretty-bytes
+100 silly mapToRegistry name pretty-bytes
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry data Result {
+103 silly mapToRegistry   raw: 'pretty-bytes',
+103 silly mapToRegistry   scope: null,
+103 silly mapToRegistry   name: 'pretty-bytes',
+103 silly mapToRegistry   rawSpec: '',
+103 silly mapToRegistry   spec: 'latest',
+103 silly mapToRegistry   type: 'tag' }
+104 silly mapToRegistry uri https://registry.npmjs.org/pretty-bytes
+105 verbose request uri https://registry.npmjs.org/gulp-rename
+106 verbose request no auth needed
+107 info attempt registry request try #1 at 20:34:33
+108 verbose etag "2YOLFS3L60CI5R6ITW4UGISSM"
+109 http request GET https://registry.npmjs.org/gulp-rename
+110 verbose request uri https://registry.npmjs.org/async
+111 verbose request no auth needed
+112 info attempt registry request try #1 at 20:34:33
+113 verbose etag "81ARFU6SKZ9ELBT19GPEFHIK7"
+114 http request GET https://registry.npmjs.org/async
+115 verbose request uri https://registry.npmjs.org/pretty-bytes
+116 verbose request no auth needed
+117 info attempt registry request try #1 at 20:34:33
+118 verbose etag "3FVKXLANDPNG2M8X87G14BHWV"
+119 http request GET https://registry.npmjs.org/pretty-bytes
+120 verbose request uri https://registry.npmjs.org/chalk
+121 verbose request no auth needed
+122 info attempt registry request try #1 at 20:34:33
+123 verbose etag "7PKCEBAZ3JN76T4A9PFANJGY"
+124 http request GET https://registry.npmjs.org/chalk
+125 verbose request uri https://registry.npmjs.org/imagemin
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 20:34:33
+128 verbose etag "ESD4YTAEB69TOKAJV0Z4NHVKH"
+129 http request GET https://registry.npmjs.org/imagemin
+130 verbose stack Error: read ECONNRESET
+130 verbose stack     at exports._errnoException (util.js:870:11)
+130 verbose stack     at TLSWrap.onread (net.js:544:26)
+131 verbose cwd C:\Users\Rafael\Documents\GitHub\MyVideoGallery\client
+132 error Windows_NT 6.3.9600
+133 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Rafael\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-contrib-imagemin" "--save-dev"
+134 error node v4.2.4
+135 error npm  v3.9.0
+136 error code ECONNRESET
+137 error errno ECONNRESET
+138 error syscall read
+139 error network read ECONNRESET
+140 error network This is most likely not a problem with npm itself
+140 error network and is related to network connectivity.
+140 error network In most cases you are behind a proxy or have bad network settings.
+140 error network
+140 error network If you are behind a proxy, please make sure that the
+140 error network 'proxy' config is set properly.  See: 'npm help config'
+141 verbose exit [ 1, true ]

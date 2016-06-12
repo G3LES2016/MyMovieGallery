@@ -8,13 +8,9 @@
  *
  * Main module of the application.
  */
-angular
-  .module('clientApp', [
-    'ngResource',
-    'ngRoute',
-    'restangular'
-  ])
-  .config(function ($routeProvider,RestangularProvider) {
+var app = angular
+  .module('clientApp', ['ngResource', 'ngRoute', 'restangular'])
+  .config(function($routeProvider, RestangularProvider) {
     RestangularProvider.setBaseUrl('http://localhost:3000');
     $routeProvider
       .when('/', {
@@ -48,8 +44,8 @@ angular
         controller: 'MovieEditCtrl',
       })
       .otherwise({
-       redirectTo: '/'
-     });
+        redirectTo: '/'
+      });
   })
   .factory('MovieRestangular', function(Restangular) {
     return Restangular.withConfig(function(RestangularConfigurer) {
@@ -62,16 +58,54 @@ angular
     return MovieRestangular.service('movie');
   })
   .directive('youtube', function() {
+    return {
+      restrict: 'E',
+      scope: {
+        src: '='
+      },
+      templateUrl: 'views/youtube.html'
+    };
+  })
+  .filter('trusted', function($sce) {
+    return function(url) {
+      return $sce.trustAsResourceUrl(url);
+    };
+  });
+app.service('sharedProperties', function() {
+  var stringValue = 'All';
+  var categories = [
+    "80s",
+    "90s",
+    "Ação",
+    "Animação",
+    "Bruxas, feitiços e afins",
+    "Chuck Norris",
+    "Dinossauros",
+    "Era Medieval",
+    "Filmes Com animais",
+    "Monstros",
+    "Musical",
+    "Natal",
+    "Nerd",
+    "Para dançar",
+    "Sessão da tarde",
+    "Super heróis",
+    "Vampiros",
+    "Zombies"
+  ];
   return {
-    restrict: 'E',
-    scope: {
-      src: '='
+    getString: function() {
+      return stringValue;
     },
-    templateUrl: 'views/youtube.html'
-  };
-})
-.filter('trusted', function ($sce) {
-  return function(url) {
-    return $sce.trustAsResourceUrl(url);
-  };
+    setString: function(value) {
+      stringValue = value;
+    },
+    getCategories : function(){
+      return categories;
+    },
+    resetCategory: function(){
+      stringValue = 'All';
+      return stringValue;
+    }
+  }
 });

@@ -12,12 +12,15 @@ angular.module('clientApp')
   $scope,
   $routeParams,
   Movie,
-  $location
+  $location,
+  sharedProperties
 ) {
   $scope.editMovie = true;
   $scope.movie = {};
+  $scope.categories = sharedProperties.getCategories();
   Movie.one($routeParams.id).get().then(function(movie) {
     $scope.movie = movie;
+    //console.log($scope.movie);
     $scope.saveMovie = function() {
       $scope.movie.save().then(function() {
         $location.path('/movie/' + $routeParams.id);
