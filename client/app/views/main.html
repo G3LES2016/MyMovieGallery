@@ -1,11 +1,9 @@
 <div class="row text-center">
-
-  <div class="col-sm-4" ng-repeat =" category in categories">
+  <div class="col-sm-4" ng-repeat =" category in categoryList">
     <div class="thumbnail">
-      <a  ng-click ="setString(category)" a ng-href="#/movies">
-      <img src="images/720pTheater.png" alt="New York">
-      <p><strong>{{category}}</strong></p>
-      
+      <a  ng-click ="setString(category.name)" a ng-href="#/movies">
+      <img src="{{category.imageURL}}" alt="{{category.name}}">
+      <p><strong>{{category.name}}</strong></p>
 
     </div>
   </div>

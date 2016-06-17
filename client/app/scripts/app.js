@@ -93,6 +93,26 @@ app.service('sharedProperties', function() {
     "Vampiros",
     "Zombies"
   ];
+  var categoryList = [
+    {name:"80s", imageURL:""},
+    {name:"90s", imageURL:""},
+    {name:"Ação", imageURL:""},
+    {name:"Animação", imageURL:""},
+    {name:"Bruxas, feitiços e afins", imageURL:""},
+    {name:"Chuck Norris", imageURL:""},
+    {name:"Dinossauros", imageURL:""},
+    {name:"Era Medieval", imageURL:""},
+    {name:"Filmes Com animais", imageURL:""},
+    {name:"Monstros", imageURL:"images/720pTheater.png"},
+    {name:"Musical", imageURL:""},
+    {name:"Natal", imageURL:""},
+    {name:"Nerd", imageURL:""},
+    {name:"Para dançar", imageURL:""},
+    {name:"Sessão da tarde", imageURL:""},
+    {name:"Super heróis", imageURL:""},
+    {name:"Vampiros", imageURL:""},
+    {name:"Zombies", imageURL:""}
+    ];
   return {
     getString: function() {
       return stringValue;
@@ -106,6 +126,9 @@ app.service('sharedProperties', function() {
     resetCategory: function(){
       stringValue = 'All';
       return stringValue;
+    },
+    getCategoryList: function(){
+      return categoryList;
     }
   }
 });

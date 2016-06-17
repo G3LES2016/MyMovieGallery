@@ -11,7 +11,8 @@ angular.module('clientApp')
   .controller('MainCtrl', function($scope, sharedProperties) {
     $scope.selectedCategory = sharedProperties.resetCategory();
     $scope.categories = sharedProperties.getCategories();
+    $scope.categoryList = sharedProperties.getCategoryList();
     $scope.setString = function(newValue) {
-       sharedProperties.setString(newValue);
-   };
+      sharedProperties.setString(newValue);
+    };
   });
