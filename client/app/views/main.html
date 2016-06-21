@@ -1,5 +1,11 @@
+<style>
+.col-sm-4{
+
+}
+
+</style>
 <div class="row text-center">
-  <div class="col-sm-4" ng-repeat =" category in categoryList">
+  <div class="col-sm-4" ng-repeat =" category in categoryList" ng-if="category.name != 'All'">
     <div class="thumbnail">
       <a  ng-click ="setString(category.name)" a ng-href="#/movies">
       <img src="{{category.imageURL}}" alt="{{category.name}}">

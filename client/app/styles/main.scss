@@ -11,7 +11,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 body {
-  padding: 0;
+  //padding: 0;
+  //background-color: #1a0000;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -24,16 +25,16 @@ body {
 
 .fill
 {
-  background-image:url("../images/720pTheater.png");
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  //background-color: #404040;
 }
 /* Custom page header */
 .header {
   border-bottom: 0px solid #191007;
   margin-bottom: 0px;
-
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -42,14 +43,39 @@ body {
     padding-bottom: 19px;
   }
 }
+.table-responsive {
+  padding-left: 50px;
+  padding-right: 50px;
+  //background-color: transparent;
+}
 
+th {
+  font-style: oblique;
+}
+.row{
+  align-items: stretch;;
+}
+.col-md-3{
+  background-color: blue;
+}
+.col-md-9{
+  background-color: red;
+}
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+  border-top: 2px solid #e5e5e5;
 
+
+}
+.btn-success{
+  margin-left: 25px;
+  padding: 10px;
+}
+.btn-info{
+  margin: 1px;
+}
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -133,4 +159,10 @@ body {
     border: 1px solid #333;
     background-color: #fff;
     color: #000;
+}
+.backgroundTheme{
+   background-size:110% auto;
+   //background-image: url("../images/720pTheater.png");
+   background-repeat: no-repeat;
+   background-position: right top;
 }

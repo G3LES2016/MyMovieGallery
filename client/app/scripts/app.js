@@ -87,13 +87,14 @@ app.service('sharedProperties', function() {
     "Musical",
     "Natal",
     "Nerd",
-    "Para dançar",
+    "Para Dançar",
     "Sessão da tarde",
-    "Super heróis",
+    "Super Heróis",
     "Vampiros",
     "Zombies"
   ];
   var categoryList = [
+    {name:"All", imageURL:""},
     {name:"80s", imageURL:""},
     {name:"90s", imageURL:""},
     {name:"Ação", imageURL:""},
@@ -104,12 +105,12 @@ app.service('sharedProperties', function() {
     {name:"Era Medieval", imageURL:""},
     {name:"Filmes Com animais", imageURL:""},
     {name:"Monstros", imageURL:"images/720pTheater.png"},
-    {name:"Musical", imageURL:""},
-    {name:"Natal", imageURL:""},
-    {name:"Nerd", imageURL:""},
-    {name:"Para dançar", imageURL:""},
+    {name:"Musical", imageURL:"images/720pTheater.png"},
+    {name:"Natal", imageURL:"images/720pTheater.png"},
+    {name:"Nerd", imageURL:"images/720pTheater.png"},
+    {name:"Para Dançar", imageURL:""},
     {name:"Sessão da tarde", imageURL:""},
-    {name:"Super heróis", imageURL:""},
+    {name:"Super Heróis", imageURL:""},
     {name:"Vampiros", imageURL:""},
     {name:"Zombies", imageURL:""}
     ];
@@ -118,7 +119,10 @@ app.service('sharedProperties', function() {
       return stringValue;
     },
     setString: function(value) {
+    //  console.log(value);
+    //  console.log(stringValue);
       stringValue = value;
+      console.log(stringValue);
     },
     getCategories : function(){
       return categories;
