@@ -104,7 +104,7 @@ app.service('sharedProperties', function() {
     {name:"Dinossauros", imageURL:""},
     {name:"Era Medieval", imageURL:""},
     {name:"Filmes Com animais", imageURL:""},
-    {name:"Monstros", imageURL:"images/720pTheater.png"},
+    {name:"Monstros", imageURL:"images/action.jpg"},
     {name:"Musical", imageURL:"images/720pTheater.png"},
     {name:"Natal", imageURL:"images/720pTheater.png"},
     {name:"Nerd", imageURL:"images/720pTheater.png"},
