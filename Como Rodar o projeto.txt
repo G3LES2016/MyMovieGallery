@@ -1,0 +1,15 @@
+Server - Pelo prompt de comando navegue até a pasta server, de o comando npm install,
+ depois para rodar o server digite node index.js
+
+Client - Primeiramente ter instalado na máquina git bash ( instalar com a opçao de utilizar o prompt do windows)
+	depois instalar o Ruby para windows, adicionar o caminho do bin do ruby na variável de ambient 'path'
+	1- pelo prompt de comando Navegar ate a pasta client, digitar npm install,
+	2- depois o comando bower install
+	3- depois o comando grunt serve
+
+
+ps. Se não rodar da uma olhada nos erros que estao sendo apresentados, joga no google o erro,
+e procura alguma resposta no stackoverflow, o projeto está funcionando se por algum motivo nao rodar,
+tente deletar as pastas (node_modules) dntro da pasta server e client, e a pasta bower_componentes
+dentro da pasta client,ja foi adicionado um .gitignore para barrar essas pastas no repositorio,
+ e repita as operações acima para adicionar as dependencias localmente ..... boa sorte.
